@@ -46,8 +46,16 @@ module.exports = {
         }),
         new FileManagerPlugin({
             events: {
-            onStart: {
-                delete: ['dist'],
+                onStart: {
+                    delete: ['dist'],
+                },
+                onEnd: {
+                    copy: [
+                        {
+                            source: path.join('src', 'static'),
+                            destination: 'dist',
+                        },
+                    ],
                 },
             },
         }),
