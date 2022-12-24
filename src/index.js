@@ -1,4 +1,5 @@
 import './main.scss';
+import './fonts/fonts.scss';
 import img1 from './images/image.png';
 import img2 from './images/logo.svg';
 
